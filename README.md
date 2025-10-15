@@ -133,17 +133,3 @@ unzip -o data/titanic.zip -d data
 * [AutoGluon GitHub](https://github.com/autogluon/autogluon)
 
 ---
-
-## 📄 License
-
-All notebooks and scripts are provided for educational purposes.
-Please verify dataset licenses and Kaggle competition rules before redistributing or submitting to public leaderboards.
-
----
-
-## 🙏 Acknowledgments
-
-Thanks to the AutoGluon open-source community for providing excellent AutoML tools and documentation.
-
-```
-```
