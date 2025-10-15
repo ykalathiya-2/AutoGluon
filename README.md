@@ -57,7 +57,7 @@ jupyter lab
 
 Each notebook will:
 
-1. Load the dataset (via Kaggle API or local `./data/` directory).
+1. Load the dataset (via Kaggle API or local `./drive/` directory).
 2. Train a baseline AutoGluon model.
 3. Apply feature engineering and compare multiple model configurations.
 4. Display leaderboards and feature importances.
@@ -67,7 +67,7 @@ Each notebook will:
 
 ## 📊 Data Access
 
-Datasets should be placed in a local `./data/` folder.
+Datasets should be placed in a local `./drive/` folder.
 
 Example for Kaggle Titanic:
 
@@ -106,14 +106,6 @@ unzip -o data/titanic.zip -d data
 
 ---
 
-## ⚠️ Notes
-
-* `refit_full()` returns a dictionary of `_FULL` models but updates the same predictor.
-  Keep using `predictor.predict()` rather than calling methods on the dict.
-* Use `IdentityFeatureGenerator()` if you wish to disable AutoGluon’s automatic feature engineering.
-
----
-
 ## 🧩 Useful Settings
 
 * **Quality presets:** `'medium_quality_faster_train'`, `'high_quality'`, `'best_quality'`
@@ -133,17 +125,3 @@ unzip -o data/titanic.zip -d data
 * [AutoGluon GitHub](https://github.com/autogluon/autogluon)
 
 ---
-
-## 📄 License
-
-All notebooks and scripts are provided for educational purposes.
-Please verify dataset licenses and Kaggle competition rules before redistributing or submitting to public leaderboards.
-
----
-
-## 🙏 Acknowledgments
-
-Thanks to the AutoGluon open-source community for providing excellent AutoML tools and documentation.
-
-```
-```
