@@ -57,7 +57,7 @@ jupyter lab
 
 Each notebook will:
 
-1. Load the dataset (via Kaggle API or local `./data/` directory).
+1. Load the dataset (via Kaggle API or local `./drive/` directory).
 2. Train a baseline AutoGluon model.
 3. Apply feature engineering and compare multiple model configurations.
 4. Display leaderboards and feature importances.
@@ -67,7 +67,7 @@ Each notebook will:
 
 ## 📊 Data Access
 
-Datasets should be placed in a local `./data/` folder.
+Datasets should be placed in a local `./drive/` folder.
 
 Example for Kaggle Titanic:
 
@@ -103,14 +103,6 @@ unzip -o data/titanic.zip -d data
    _ = predictor.refit_full()
    preds = predictor.predict(test_data)
    ```
-
----
-
-## ⚠️ Notes
-
-* `refit_full()` returns a dictionary of `_FULL` models but updates the same predictor.
-  Keep using `predictor.predict()` rather than calling methods on the dict.
-* Use `IdentityFeatureGenerator()` if you wish to disable AutoGluon’s automatic feature engineering.
 
 ---
 
